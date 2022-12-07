@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+:root {
+  --font: "Poiret One", cursive;
+  --totalscreen: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* outline: 1px double orangered; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+* *::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+}
+* *::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.818);
+  border-radius: 20px;
+  visibility: hidden;
+}
+* *::-webkit-scrollbar-track {
+  overflow-y: hidden;
+  visibility: hidden;
+  background-color: rgba(233, 16, 16, 0);
+  opacity: 0;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  height: 160px;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+.section div {
+  position: relative;
+  background-color: rgb(247, 247, 247);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: var(--totalscreen);
+  flex: 0 0 40%;
+  scroll-snap-align: start;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: -1px 1px 4px rgba(168, 168, 168, 0.259);
+}
+.section span {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  font-size: 0.7em;
+  line-height: 14px;
+  font-variant: small-caps;
+  letter-spacing: 4.6px;
+}/*# sourceMappingURL=section.css.map */

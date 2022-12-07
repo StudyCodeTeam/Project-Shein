@@ -1,0 +1,36 @@
+
+
+.fav-page{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    bottom: 50px;
+    transform: translate(0px, 800px);
+    color: white;
+    right: 0;
+    width: var(--totalscreen);
+    height: 85%;
+    transition: all .5s cubic-bezier(1,-0.04,.54,1.16);
+    visibility: hidden;
+}
+
+.fav-page-content{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: var(--totalscreen);
+    height: var(--totalscreen);
+    border-top: 1px solid rgb(207, 207, 207);
+}
+
+.fav-page-content h4{
+    font-family: 'Poiret One', cursive;
+    font-weight: 800;
+    margin: 20px;
+}
+
+.fav-page-content span{
+    font-size: .5em;
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>teste</title>
+        <script type="module" src="teste.js" defer></script>
+        <style>
+
+            body{
+                background-color: gray;
+            }
+        
+            .section {
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                -ms-scroll-snap-type: x mandatory;
+                scroll-snap-type: x mandatory;
+                height: 13em;
+                margin: 0px auto;
+                border-radius: 0px;
+            }
+            .section div {
+                position: relative;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 13em;
+                width: 100%;
+                flex: 0 0 36%;
+                scroll-snap-align: start;
+                border-radius: 2px;
+                box-shadow: -1px 1px 4px rgba(168, 168, 168, 0.259);
+            }
+
+        </style>
+    </head>
+    <body>
+    </body>
+</html>

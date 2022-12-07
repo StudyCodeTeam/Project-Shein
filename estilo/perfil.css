@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px double crimson; */
+    background: none;
+    border: none;
+    user-select: none;
+    font-weight: 100;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.818);
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-track {
+    overflow-y: hidden;
+    visibility: hidden;
+    background-color: rgba(233, 16, 16, 0);
+    opacity: 0;
+}
+
+body{
+    background-color: #f2f1f1;
+}
+
+header{
+    position: sticky;
+    margin: 0;
+    top: 0;
+    left: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 8px;
+    background-color: white;
+    height: 50px;
+    z-index: 10;
+}
+
+header h2{
+    color: black;
+    font-size: 1.5em;
+    margin-left: 12%;
+}
+
+.favorite-person{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: rgba(255, 0, 0, 0.511); */
+    width: 20%;
+}
+
+header button{
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header > button > span{
+    background-color: none;
+}
+
+.fav-page {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    bottom: 50px;
+    transform: translate(0px, 800px);
+    color: white;
+    right: 0;
+    width: 100%;
+    height: 82%;
+    transition: all 0.5s cubic-bezier(1, -0.04, 0.54, 1.16);
+    visibility: hidden;
+}
+.fav-page .fav-page-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid rgb(207, 207, 207);
+}
+.fav-page .fav-page-content h4 {
+    font-family: "Poiret One", cursive;
+    font-weight: 800;
+    margin: 20px;
+}
+.fav-page .fav-page-content span {
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.moreoptions{
+    position: fixed;
+    margin: 0;
+    top: 5px;
+    left: -1px;
+    display: grid;
+    grid-template-columns: repeat(2, 28%);
+    gap: 10px 20%;
+    background: rgb(247, 249, 249);
+    border: 1px solid white;
+    box-shadow: -1px 3px 2px rgba(0, 0, 0, 0.356);
+    width: 78%;
+    max-width: 85%;
+    height: 150px;
+    flex: 0 0 50%;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    padding: 5%;
+    visibility: hidden;
+    opacity: 1;
+    transform: translate(-300px, 0px);
+    cursor: pointer;
+    z-index: 3;
+}
+
+ul{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(241, 242, 243);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 2px 5px;
+    box-shadow: -1px 2px 1px rgba(0, 0, 0, 0.356);
+    width: 140%;
+    height: 25px;
+    font-size: .8em;
+}
+
+.closemenu{
+    position: absolute;
+    bottom: 4px;
+    right: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #e6e6e6e8;
+    width: 25px;
+    height: 25px;
+    box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.514);
+    cursor: pointer;
+}
+
+
+main{
+    /* background-color: #04ff04; */
+    padding: .5%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1%;
+    gap: 8%;
+    width: 100%;
+    height: 130px;
+    margin-top: 8px;
+    background-color: white;
+}
+
+section legend {
+    font-family: 'Poiret One', cursive;
+    font-weight: 700;
+}
+
+section > h3 {
+    margin-left: -65%;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+}
+
+.buttonsimgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10%;
+    padding: 1%;
+    width: 90%;
+    margin-top: 3%;
+}
+
+section > div > button > img {
+    width: 38px;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    display: flex;
+    gap: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid rgb(196, 196, 196);
+    /* background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 252, 252, 0.6)); */
+    background-color: rgba(255, 255, 255, 0.863);
+    backdrop-filter: blur(3px);
+}
+
+footer > button{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    margin-bottom: 3px;
+    cursor: pointer;
+}

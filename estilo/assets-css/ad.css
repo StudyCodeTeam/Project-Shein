@@ -1,0 +1,46 @@
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: var(--totalscreen);
+    margin-top: 10px;
+}
+
+.anuncio{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F6F6;
+    width: 98%;
+    height: 134px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: -1px 1px 4px rgb(168 168 168 / 26%);
+    margin-top: 0px;
+    overflow: hidden;
+}
+
+.anuncio .imagem{
+    background-repeat: no-repeat;
+    height: 197px;
+    flex: 0 0 103%;
+    background-size: contain;
+    background-position: right bottom;
+    transform-origin: center;
+}
+
+.anuncio span{
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    font-size: 1.3em;
+    font-family: var(--font);
+    font-weight: bold;
+    line-height: 14px;
+    font-variant: small-caps;
+    letter-spacing: .6px;
+}
