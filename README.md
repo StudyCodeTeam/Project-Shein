@@ -1,2 +1,2 @@
 # Project-Shein
-e-comerce inspirado no site Shein
+mobile first version 0.1
